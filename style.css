@@ -1,0 +1,297 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&family=Murecho:wght@100&display=swap");*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.section-title {
+    font-family: 'Roboto Slab', serif;
+}
+
+p, ul.projects, ul.first {
+	font-family: 'Send Flowers', cursive;
+}
+
+nav {
+	background-color: #4C0C47;
+	height: 35px;
+}
+ul {
+    list-style: none;
+}
+
+ul.first {
+	padding: 10px 16px;
+    list-style: none;
+    text-align: center;
+}
+
+
+ul.first li {
+    display: inline;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+ul.first li+li:before {
+    padding: 15px;
+    color: white;
+    content: "||";
+}
+
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 100px;
+}
+
+section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+.first-section {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: white;
+	text-align: center;
+}
+.first-section .first-img {
+	background-color:#4c0c5c;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+}
+.first-section .first-img:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 1;
+}
+
+
+img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+section a {
+    display: inline; 
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px 6px;
+    
+}
+
+section a:hover {
+	color: rgb(125, 207, 235);
+}
+
+
+.about-section {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.brief-intro {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.about-section h2, .project-section h2, .service-section h2,
+.progress-section h2 {
+	font-family: 'Send Flowers', cursive;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-section, .project-section, .service-section{
+    padding: 40px;
+}
+
+
+.service-section {
+	background-color: #ffffff;
+    padding: 40px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    /*padding-left: 300px;
+    margin-right: 100px;*/
+    margin: 0 auto;
+}
+
+
+
+.project-section {
+    width: 100vw;
+
+}
+
+
+.skills-btn {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #000000;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-evenly;
+}
+
+.skills-btn:hover {
+    color: white;
+    background-color: #4c0c5c;
+    transition: 0.9s;
+}
+
+.project-section {
+    width: 100vw;
+
+}
+
+.name1:hover, .name2:hover,
+.name3:hover, .name4:hover{
+    cursor: pointer;
+    color: #4c0c5c;
+}
+
+
+.projects {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .projects {
+        display: block;
+    }
+
+    .skills-heading {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 40px;
+        width: 30vw;
+        text-align: center;
+        display: block;
+    }
+
+    .skills-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-section {
+        width: 80vw;
+        margin-left: 0;
+        margin-right: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+
+
+/*Footer Section*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4c0c5c;
+	padding: 60px 0;
+}
+
+.social p {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+span, .social{
+    display: flex;
+	color: #ffffff;
+}
+
+div {
+	width: 70%;
+}
+
+.column {
+    width: 80%;
+    height: 50%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px;
+    border-radius: 2px;
+}
+
+.column2 {
+    width: 80%;
+    height: 70%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px;
+    border-radius: 2px;
+}
+
+
+.column, .column2 {
+    cursor: default;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: 1px;
+    border-radius: 2px;
+}
+
